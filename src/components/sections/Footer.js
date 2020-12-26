@@ -55,7 +55,7 @@ const Footer = () => (
             <Copyright>
 
               <span style={{ fontSize: "12px" }}>
-                Illustrations by
+                Çizimler:
                 {` `}
                 <ExternalLink href="https://twitter.com/diana_valeanu">
                   @diana_valeanu
@@ -63,7 +63,7 @@ const Footer = () => (
               </span>
               <br />
               <span style={{ fontSize: "12px" }}>
-                It's demo site that inspired by
+                Bu demoda esinlendiğim Web sitesi:
                 {` `}
                 <ExternalLink href="https://www.gatsbyjs.org/starters/ajayns/gatsby-absurd/">
                   Gatsby_Absurd
