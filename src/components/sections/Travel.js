@@ -2,47 +2,54 @@ import React from 'react';
 import styled from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
-
+import ExternalLink from '@common/ExternalLink';
 import { Section, Container } from '@components/global';
+
 
 const TEAM = [
   {
-    name: 'Josh Peck',
-    image: 'josh.jpg',
-    role: 'Founder',
+    name: 'Almanya',
+    image: 'geziberlin.jpg',
+    city: 'Hamburg, Berlin',
+    link: "http://asd"
   },
   {
-    name: 'Lisa Haydon',
-    image: 'lisa.jpg',
-    role: 'Art Director',
+    name: 'Fransa',
+    image: 'geziparis.jpg',
+    city: 'Paris, Bordeaux, Marsilya',
+    link: "http://asd"
   },
   {
-    name: 'Ashlyn Harris',
-    image: 'ashlyn.jpg',
-    role: 'Frontend Engineer',
+    name: 'İspanya',
+    image: 'gezibarselona.jpg',
+    city: 'Madrit, Barselona',
+    link: "http://asd"
+  },  
+  {
+    name: 'İtalya',
+    image: 'geziroma.jpg',
+    city: 'Roma, Venedik',
+    link: "http://asd"
   },
   {
-    name: 'Todd Joseph',
-    image: 'todd.jpg',
-    role: 'Designer',
+    name: 'Hırvatistan',
+    image: 'gezizagrep.jpg',
+    city: 'Zagrep, Split, Dubrovnik',
+    link: "http://asd"
   },
   {
-    name: 'Martin White',
-    image: 'martin.jpg',
-    role: 'Backend Engineer',
-  },
-  {
-    name: 'Rose Leslie',
-    image: 'rose.jpg',
-    role: 'Marketing',
+    name: 'Kuzey Avrupa',
+    image: 'gezioslo.jpg',
+    city: 'Oslo, Stockholm, Helsinki',
+    link: "http://asd"
   },
 ];
 
-const Team = () => (
+const Travel = () => (
   <StaticQuery
     query={graphql`
       query {
-        allFile(filter: { sourceInstanceName: { eq: "team" } }) {
+        allFile(filter: { sourceInstanceName: { eq: "travel" } }) {
           edges {
             node {
               relativePath
@@ -56,7 +63,7 @@ const Team = () => (
         }
         art_team: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "team_work" }
+          name: { eq: "open_map" }
         ) {
           childImageSharp {
             fluid(maxWidth: 1600) {
@@ -67,20 +74,22 @@ const Team = () => (
       }
     `}
     render={data => (
-      <Section id="team" accent="secondary">
+      <Section id="travel" accent="secondary">
         <Container style={{ position: 'relative' }}>
-          <h1>The Team</h1>
+          <h1>Gezilerim</h1>
           <TeamGrid>
-            {TEAM.map(({ name, image, role }) => {
+            {TEAM.map(({ name, image, city, link }) => {
               const img = data.allFile.edges.find(
                 ({ node }) => node.relativePath === image
               ).node;
 
               return (
-                <div key={name}>
+                <div key={image}>
+                  <ExternalLink href={link}>
                   <Img fluid={img.childImageSharp.fluid} alt={name} />
+                  </ExternalLink>
                   <Title>{name}</Title>
-                  <Subtitle>{role}</Subtitle>
+                  <Subtitle>{city}</Subtitle>
                 </div>
               );
             })}
@@ -105,16 +114,13 @@ const TeamGrid = styled.div`
   justify-content: space-between;
   width: 60%;
   margin-top: 72px;
-
   @media (max-width: ${props => props.theme.screen.lg}) {
     justify-content: start;
   }
-
   @media (max-width: ${props => props.theme.screen.md}) {
     width: 100%;
     grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
   }
-
   @media (max-width: ${props => props.theme.screen.xs}) {
     grid-gap: 24px;
   }
@@ -126,11 +132,9 @@ const Art = styled.figure`
   position: absolute;
   top: 0;
   left: 70%;
-
   @media (max-width: ${props => props.theme.screen.lg}) {
     top: 20%;
   }
-
   @media (max-width: ${props => props.theme.screen.md}) {
     display: none;
   }
@@ -142,7 +146,6 @@ const ArtMobile = styled.figure`
   display: none;
   margin-top: 64px;
   margin-bottom: -60%;
-
   @media (max-width: ${props => props.theme.screen.md}) {
     display: block;
   }
@@ -158,4 +161,4 @@ const Subtitle = styled.p`
   color: ${props => props.theme.color.black.light};
 `;
 
-export default Team;
+export default Travel;

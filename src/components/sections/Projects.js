@@ -6,37 +6,38 @@ import Img from 'gatsby-image';
 import { Section, Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
 
-import { ReactComponent as AirbnbLogo } from '@images/logos/airbnb.svg';
-import { ReactComponent as AppleMusicLogo } from '@images/logos/apple-music.svg';
-import { ReactComponent as CokeLogo } from '@images/logos/coca-cola.svg';
-import { ReactComponent as NodeLogo } from '@images/logos/nodejs.svg';
-import { ReactComponent as NikeLogo } from '@images/logos/nike.svg';
-import { ReactComponent as InstagramLogo } from '@images/logos/instagram.svg';
+import { ReactComponent as ReactLogo } from '@images/logos/react.svg';
+import { ReactComponent as GatsbyLogo } from '@images/logos/gatsby.svg';
+import { ReactComponent as PythonLogo } from '@images/logos/python.svg';
+import { ReactComponent as PersonalLogo } from '@images/logos/personal.svg';
+import { ReactComponent as LinkLogo } from '@images/logos/link.svg';
+import { ReactComponent as Link2Logo } from '@images/logos/link2.svg';
+
 
 const LOGOS = [
   {
-    logo: AirbnbLogo,
-    link: 'https://airbnb.io',
+    logo: ReactLogo,
+    link: 'https://ao',
   },
   {
-    logo: AppleMusicLogo,
-    link: 'https://www.apple.com/in/music/',
+    logo: GatsbyLogo,
+    link: 'https://g',
   },
   {
-    logo: CokeLogo,
-    link: 'https://coca-cola.com',
+    logo: PythonLogo,
+    link: 'https://py',
   },
   {
-    logo: NodeLogo,
-    link: 'https://nodejs.org',
+    logo: PersonalLogo,
+    link: 'https://dsfrg',
   },
   {
-    logo: NikeLogo,
-    link: 'https://nike.com',
+    logo: LinkLogo,
+    link: 'https://nsadm',
   },
   {
-    logo: InstagramLogo,
-    link: 'https://instagram.com',
+    logo: Link2Logo,
+    link: 'https://insdfom',
   },
 ];
 
@@ -46,7 +47,7 @@ const UsedBy = () => (
       query {
         art_story: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "tell_story" }
+          name: { eq: "ideas" }
         ) {
           childImageSharp {
             fluid(maxWidth: 1200) {
@@ -57,10 +58,10 @@ const UsedBy = () => (
       }
     `}
     render={data => (
-      <Section id="brands" accent>
+      <Section id="projects" accent>
         <StyledContainer>
           <div>
-            <h1>Used by biggest in tech</h1>
+            <h1>Projelerim</h1>
             <LogoGrid>
               {LOGOS.map(({ logo, link }) => (
                 <ExternalLink key={link} href={link}>
@@ -84,13 +85,11 @@ const LogoGrid = styled.div`
   grid-gap: 64px;
   justify-items: center;
   margin-top: 96px;
-
   a {
     svg {
       width: 100%;
     }
   }
-
   @media (max-width: ${props => props.theme.screen.sm}) {
     grid-template-columns: 1fr;
   }
@@ -100,7 +99,6 @@ const StyledContainer = styled(Container)`
   display: flex;
   justify-content: flex-end;
   position: relative;
-
   @media (max-width: ${props => props.theme.screen.md}) {
     justify-content: center;
   }
@@ -111,13 +109,11 @@ const Art = styled.figure`
   position: absolute;
   top: -12%;
   right: 50%;
-
   @media (max-width: ${props => props.theme.screen.lg}) {
     top: 0;
     right: 65%;
     width: 500px;
   }
-
   @media (max-width: ${props => props.theme.screen.md}) {
     display: none;
   }

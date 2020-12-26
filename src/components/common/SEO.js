@@ -2,13 +2,13 @@ import React from 'react';
 import Helmet from 'react-helmet';
 
 const SEO_DATA = {
-  description: 'An absurd gatsby starter',
-  title: 'Absurd',
+  description: 'Gökhan Karaçay Kişisel Web Sitesi',
+  title: 'Gökhan Karaçay Kişisel Web Sitesi',
   url: '',
-  author: 'ajayns',
-  keywords: ['gatsby', 'site', 'absurd'],
+  author: 'Gökhan Karaçay',
+  keywords: ['gatsby', 'site', 'absurd', 'react', 'web design', 'personal web page', 'personal blog', "gezi", "travel"],
   img: '',
-  twitterId: '@ajayns_',
+  twitterId: '@gokhankrcy',
   facebookId: '',
 };
 

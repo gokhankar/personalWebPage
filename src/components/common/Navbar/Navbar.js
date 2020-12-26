@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Scrollspy from 'react-scrollspy';
-
+import banner from "../../../images/ban.png"
+import { Link } from "gatsby"
 import { Container } from '@components/global';
 import {
   Nav,
@@ -12,10 +13,10 @@ import {
   MobileMenu,
   Mobile,
 } from './style';
-
 import { ReactComponent as MenuIcon } from '@static/icons/menu.svg';
 
-const NAV_ITEMS = ['About', 'Brands', 'Team', 'FAQ'];
+
+const NAV_ITEMS = [ ["About", 'Hakkında'], ["Projects", 'Projeler'], ["Travel",'Gezi'], ["Faq", 'Blog']];
 
 class Navbar extends Component {
   state = {
@@ -33,21 +34,21 @@ class Navbar extends Component {
   };
 
   getNavAnchorLink = item => (
-    <AnchorLink href={`#${item.toLowerCase()}`} onClick={this.closeMobileMenu}>
-      {item}
+    <AnchorLink href={`#${item[0].toLowerCase()}`} onClick={this.closeMobileMenu}>
+      {item[1]}
     </AnchorLink>
   );
 
   getNavList = ({ mobile = false }) => (
     <NavListWrapper mobile={mobile}>
       <Scrollspy
-        items={NAV_ITEMS.map(item => item.toLowerCase())}
+        items={NAV_ITEMS.map(item => item[0].toLowerCase())}
         currentClassName="active"
         mobile={mobile}
         offset={-64}
       >
         {NAV_ITEMS.map(navItem => (
-          <NavItem key={navItem}>{this.getNavAnchorLink(navItem)}</NavItem>
+          <NavItem key={navItem[0]}>{this.getNavAnchorLink(navItem)}</NavItem>
         ))}
       </Scrollspy>
     </NavListWrapper>
@@ -59,13 +60,16 @@ class Navbar extends Component {
     return (
       <Nav {...this.props}>
         <StyledContainer>
-          <Brand>Absurd</Brand>
+          <Brand> 
+        <Link href="" target="_self">
+          <img src={banner} width="160px"/>
+          </Link>
+          </Brand>
           <Mobile>
-            <button onClick={this.toggleMobileMenu} style={{ color: 'black' }}>
+            <button onClick={this.toggleMobileMenu} style={{backgroundColor:"#8bd8ed", color: 'black' }}>
               <MenuIcon />
             </button>
           </Mobile>
-
           <Mobile hide>{this.getNavList({})}</Mobile>
         </StyledContainer>
         <Mobile>

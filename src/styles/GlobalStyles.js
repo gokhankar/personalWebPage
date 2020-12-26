@@ -17,7 +17,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   h1, h2 {
-    font-family: ${props => props.theme.font.primary};
+    font-family: ${props => props.theme.font.secondary};
   }
 
   h1 {
@@ -54,6 +54,12 @@ const GlobalStyles = createGlobalStyle`
       ${props => props.theme.font_size.small};
     }
   }
+  
+  .underline {
+    width: 6rem;
+    height: 0.25rem;
+    background: var(--clr-primary-5);
+  
 
   button {
     border: none;

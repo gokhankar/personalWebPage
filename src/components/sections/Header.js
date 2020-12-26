@@ -6,13 +6,14 @@ import Img from 'gatsby-image';
 import { Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
 
+
 const Header = () => (
   <StaticQuery
     query={graphql`
       query {
         art_build: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "build" }
+          name: { eq: "profile" }
         ) {
           childImageSharp {
             fluid(maxWidth: 1400) {
@@ -26,22 +27,20 @@ const Header = () => (
       <HeaderWrapper>
         <Container>
           <Grid>
+            
             <Art>
               <Img fluid={data.art_build.childImageSharp.fluid} />
             </Art>
             <Text>
               <h1>
-                Fast in
+                Gökhan Karaçay
                 <br />
-                every way
-                <br />
-                that matters
+                kişisel web sitesi
               </h1>
+              <div className="underline">    </div>
               <br />
-              <p>
-                <StyledExternalLink href="https://github.com/ajayns/gatsby-absurd">
-                  Check out source &nbsp;&#x2794;
-                </StyledExternalLink>
+              <p> Web tasarım öğrenmeye çalışıyor, Javascript ve React meraklısı, bu işi profesyonel olarak yapma hevesinde. Gezmeyi, yemeyi, fotoğraf çekmeyi sever. İnsanı sever, hayvanı sever, doğayı sever. Fani, baba, eş.
+
               </p>
             </Text>
           </Grid>
@@ -98,13 +97,13 @@ const Text = styled.div`
   }
 `;
 
-const StyledExternalLink = styled(ExternalLink)`
-  color: inherit;
-  text-decoration: none;
+// const StyledExternalLink = styled(ExternalLink)`
+//   color: inherit;
+//   text-decoration: none;
 
-  &:hover {
-    color: ${props => props.theme.color.black.regular};
-  }
-`;
+//   &:hover {
+//     color: ${props => props.theme.color.black.regular};
+//   }
+// `;
 
 export default Header;
