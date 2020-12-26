@@ -63,7 +63,7 @@ const Footer = () => (
               </span>
               <br />
               <span style={{ fontSize: "12px" }}>
-                Bu demoda esinlendiğim Web sitesi:
+                Bu demoda esinlendiğim web sitesi:
                 {` `}
                 <ExternalLink href="https://www.gatsbyjs.org/starters/ajayns/gatsby-absurd/">
                   Gatsby_Absurd
