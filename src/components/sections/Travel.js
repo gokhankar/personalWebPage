@@ -22,7 +22,7 @@ const TEAM = [
   {
     name: 'İspanya',
     image: 'gezibarselona.jpg',
-    city: 'Madrit, Barselona',
+    city: 'Madrid, Barselona',
     link: "http://asd"
   },  
   {
