@@ -62,7 +62,7 @@ class Navbar extends Component {
         <StyledContainer>
           <Brand> 
         <Link href="" target="_self">
-          <img src={banner} width="160px"/>
+          <img src={banner} alt="banner" width="160px"/>
           </Link>
           </Brand>
           <Mobile>

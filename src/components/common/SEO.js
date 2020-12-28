@@ -33,6 +33,8 @@ const SEO = () => {
       <meta name="description" content={SEO_DATA.description} />
       <meta name="keywords" content={SEO_DATA.keywords.join(', ')} />
       <meta name="author" content={SEO_DATA.author} />
+      <link rel="preconnect" href="https://fonts.gstatic.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet"></link>
       <title>{SEO_DATA.title}</title>
       <html lang="en" />
     </Helmet>
