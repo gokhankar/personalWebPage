@@ -8,6 +8,17 @@ import ExternalLink from '@common/ExternalLink';
 
 const FAQS = [
   {
+    title: 'Yazılım öğrenmeye Python ile başlamak mantıklı mı?',
+    content: () => (
+      <>
+        Soru çok açık, cevap da aynı açıklıkta olsun istiyorum. Fakat bu sorunun cevabı kişiden kişiye değişeceği için kısa cevap vermek zor. Yani aslında cevap hem evet, hem de hayır. Neden mi?
+        <ExternalLink style={{ color: "blue" }} href="https://gokhankaracay.medium.com/yaz%C4%B1l%C4%B1m-%C3%B6%C4%9Frenmeye-python-ile-ba%C5%9Flamak-mant%C4%B1kl%C4%B1-m%C4%B1-debb7eb63a71">Story oku</ExternalLink>.
+
+      </>
+    ),
+  },
+
+  {
     title: 'Yazılıma nereden başladım? Aynı hatayı yapmayın!',
     content: () => (
       <>
