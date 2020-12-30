@@ -11,37 +11,37 @@ const TEAM = [
     name: 'Almanya',
     image: 'geziberlin.jpg',
     city: 'Hamburg, Berlin',
-    link: "http://asd"
+    link: "https://sharp-easley-16d5f7.netlify.app/destination/Almanya"
   },
   {
     name: 'Fransa',
     image: 'geziparis.jpg',
     city: 'Paris, Bordeaux, Marsilya',
-    link: "http://asd"
+    link: "https://sharp-easley-16d5f7.netlify.app/destination/Fransa"
   },
   {
     name: 'İspanya',
     image: 'gezibarselona.jpg',
     city: 'Madrid, Barselona',
-    link: "http://asd"
+    link: "https://sharp-easley-16d5f7.netlify.app/destination/%C4%B0spanya"
   },  
   {
     name: 'İtalya',
     image: 'geziroma.jpg',
     city: 'Roma, Venedik',
-    link: "http://asd"
+    link: "https://sharp-easley-16d5f7.netlify.app/destination/%C4%B0talya"
   },
   {
     name: 'Hırvatistan',
     image: 'gezizagrep.jpg',
     city: 'Zagrep, Split, Dubrovnik',
-    link: "http://asd"
+    link: "https://sharp-easley-16d5f7.netlify.app/destination/%C4%B0talya"
   },
   {
     name: 'Kuzey Avrupa',
     image: 'gezioslo.jpg',
     city: 'Oslo, Stockholm, Helsinki',
-    link: "http://asd"
+    link: "https://sharp-easley-16d5f7.netlify.app/destination/Kuzay%20Avrupa"
   },
 ];
 
