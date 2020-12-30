@@ -35,7 +35,7 @@ const TEAM = [
     name: 'Hırvatistan',
     image: 'gezizagrep.jpg',
     city: 'Zagrep, Split, Dubrovnik',
-    link: "https://sharp-easley-16d5f7.netlify.app/destination/%C4%B0talya"
+    link: "https://sharp-easley-16d5f7.netlify.app/destination/H%C4%B1rvatistan"
   },
   {
     name: 'Kuzey Avrupa',
