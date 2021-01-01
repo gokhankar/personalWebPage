@@ -41,7 +41,7 @@ const TEAM = [
     name: 'Kuzey Avrupa',
     image: 'gezioslo.jpg',
     city: 'Oslo, Stockholm, Helsinki',
-    link: "https://sharp-easley-16d5f7.netlify.app/destination/Kuzay%20Avrupa"
+    link: "https://sharp-easley-16d5f7.netlify.app/destination/Kuzey%20Avrupa"
   },
 ];
 
