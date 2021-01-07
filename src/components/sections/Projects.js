@@ -17,27 +17,27 @@ import { ReactComponent as Link2Logo } from '@images/logos/link2.svg';
 const LOGOS = [
   {
     logo: ReactLogo,
-    link: 'https://ao',
+    link: 'https://flamboyant-perlman-4a6dac.netlify.app/',
   },
   {
     logo: GatsbyLogo,
-    link: 'https://g',
+    link: 'https://flamboyant-perlman-4a6dac.netlify.app/',
   },
   {
     logo: PythonLogo,
-    link: 'https://py',
+    link: 'https://flamboyant-perlman-4a6dac.netlify.app/',
   },
   {
     logo: PersonalLogo,
-    link: 'https://dsfrg',
+    link: 'https://flamboyant-perlman-4a6dac.netlify.app/',
   },
   {
     logo: LinkLogo,
-    link: 'https://nsadm',
+    link: 'https://flamboyant-perlman-4a6dac.netlify.app/',
   },
   {
     logo: Link2Logo,
-    link: 'https://insdfom',
+    link: 'https://flamboyant-perlman-4a6dac.netlify.app/',
   },
 ];
 
