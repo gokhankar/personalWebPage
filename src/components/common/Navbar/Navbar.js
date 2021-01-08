@@ -4,6 +4,7 @@ import Scrollspy from 'react-scrollspy';
 import banner from "../../../images/ban.png"
 import { Link } from "gatsby"
 import { Container } from '@components/global';
+import { FiMenu } from "react-icons/fi";
 import {
   Nav,
   NavItem,
@@ -13,13 +14,13 @@ import {
   MobileMenu,
   Mobile,
 } from './style';
-import { ReactComponent as MenuIcon } from '@static/icons/menu.svg';
+// import { ReactComponent as MenuIcon } from '@static/icons/menu.svg';
 
 
 const NAV_ITEMS = [ ["About", 'Hakkında'], ["Projects", 'Projeler'], ["Travel",'Gezi'], ["Faq", 'Blog']];
 
 class Navbar extends Component {
-  state = {
+  state = { 
     mobileMenuOpen: false,
   };
 
@@ -66,8 +67,8 @@ class Navbar extends Component {
           </Link>
           </Brand>
           <Mobile>
-            <button onClick={this.toggleMobileMenu} style={{backgroundColor:"#8bd8ed", color: 'black' }}>
-              <MenuIcon />
+            <button onClick={this.toggleMobileMenu} style={{backgroundColor:"#8bd8ed", color: 'black', border: "none", }}>
+              <FiMenu />
             </button>
           </Mobile>
           <Mobile hide>{this.getNavList({})}</Mobile>
