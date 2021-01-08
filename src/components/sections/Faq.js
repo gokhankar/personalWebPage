@@ -8,6 +8,17 @@ import ExternalLink from '@common/ExternalLink';
 
 const FAQS = [
   {
+    title: 'Web geliştirici olmak için yol haritası(çaylaktan tavsiye içerir)',
+    content: () => (
+      <>
+       Eğer yazılım öğrenmek istiyorsanız, ama nereden başlayacağınızı bilemiyorsanız, bir önceki yazımı okumanızı tavsiye ederim. Yeni başlayacaklar için, önce hangi alanda ilerleyeceğine karar vermek daha doğru bir ilk adım olacaktır.
+        <ExternalLink style={{ color: "blue" }} href="https://gokhankaracay.medium.com/ba%C5%9Fl%C4%B1k-gelecek-f5126b96a16e">Story oku</ExternalLink>.
+
+      </>
+    ),
+  },
+
+  {
     title: 'Yazılım öğrenmeye Python ile başlamak mantıklı mı?',
     content: () => (
       <>
