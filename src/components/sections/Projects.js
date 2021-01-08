@@ -6,12 +6,12 @@ import Img from 'gatsby-image';
 import { Section, Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
 
-import { ReactComponent as ReactLogo } from '@images/logos/react.svg';
-import { ReactComponent as GatsbyLogo } from '@images/logos/gatsby.svg';
-import { ReactComponent as PythonLogo } from '@images/logos/python.svg';
-import { ReactComponent as PersonalLogo } from '@images/logos/personal.svg';
-import { ReactComponent as LinkLogo } from '@images/logos/link.svg';
-import { ReactComponent as Link2Logo } from '@images/logos/link2.svg';
+import ReactLogo from '@images/logos/prlogoreact.png';
+import GatsbyLogo from '@images/logos/prlogogatsby.png';
+import PythonLogo from '@images/logos/prlogopython.png';
+import PersonalLogo from '@images/logos/prlogokisisel.png';
+import LinkLogo from '@images/logos/prlogomeslek.png';
+import Link2Logo from '@images/logos/prlogodiger.png';
 
 
 const LOGOS = [
@@ -61,11 +61,13 @@ const UsedBy = () => (
       <Section id="projects" accent>
         <StyledContainer>
           <div>
-            <h1>Projelerim</h1>
+            <ExternalLink href='https://flamboyant-perlman-4a6dac.netlify.app/' css={"text-decoration: none; color: black;"}>
+              <h1>Projelerim</h1>
+            </ExternalLink>
             <LogoGrid>
               {LOGOS.map(({ logo, link }) => (
                 <ExternalLink key={link} href={link}>
-                  {logo()}
+                  <img src={logo} alt="Resim" />
                 </ExternalLink>
               ))}
             </LogoGrid>
