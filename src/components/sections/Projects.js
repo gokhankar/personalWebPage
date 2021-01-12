@@ -67,7 +67,7 @@ const UsedBy = () => (
             <LogoGrid>
               {LOGOS.map(({ logo, link }) => (
                 <ExternalLink key={link} href={link}>
-                  <img src={logo} alt="Resim" />
+                  <img src={logo} alt="Resim" width="200px" height="80px" />
                 </ExternalLink>
               ))}
             </LogoGrid>
