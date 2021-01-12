@@ -7,41 +7,41 @@ import { Section, Container } from '@components/global';
 
 
 const TEAM = [
-  {
+   {
     name: 'Almanya',
     image: 'geziberlin.jpg',
     city: 'Hamburg, Berlin',
-    link: "https://sharp-easley-16d5f7.netlify.app/destination/Almanya"
+    link: "https://gokhankaracaytravel.netlify.app/destination/Almanya"
   },
   {
     name: 'Fransa',
     image: 'geziparis.jpg',
     city: 'Paris, Bordeaux, Marsilya',
-    link: "https://sharp-easley-16d5f7.netlify.app/destination/Fransa"
+    link: "https://gokhankaracaytravel.netlify.app/destination/Fransa"
   },
   {
     name: 'İspanya',
     image: 'gezibarselona.jpg',
     city: 'Madrid, Barselona',
-    link: "https://sharp-easley-16d5f7.netlify.app/destination/%C4%B0spanya"
+    link: "https://gokhankaracaytravel.netlify.app/destination/%C4%B0spanya"
   },  
   {
     name: 'İtalya',
     image: 'geziroma.jpg',
     city: 'Roma, Venedik',
-    link: "https://sharp-easley-16d5f7.netlify.app/destination/%C4%B0talya"
+    link: "https://gokhankaracaytravel.netlify.app/destination/%C4%B0talya"
   },
   {
     name: 'Hırvatistan',
     image: 'gezizagrep.jpg',
     city: 'Zagrep, Split, Dubrovnik',
-    link: "https://sharp-easley-16d5f7.netlify.app/destination/H%C4%B1rvatistan"
+    link: "https://gokhankaracaytravel.netlify.app/destination/H%C4%B1rvatistan"
   },
   {
     name: 'Kuzey Avrupa',
     image: 'gezioslo.jpg',
     city: 'Oslo, Stockholm, Helsinki',
-    link: "https://sharp-easley-16d5f7.netlify.app/destination/Kuzey%20Avrupa"
+    link: "https://gokhankaracaytravel.netlify.app/destination/Kuzey%20Avrupa"
   },
 ];
 
