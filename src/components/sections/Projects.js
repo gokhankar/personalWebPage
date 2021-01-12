@@ -17,27 +17,27 @@ import Link2Logo from '@images/logos/prlogodiger.png';
 const LOGOS = [
   {
     logo: ReactLogo,
-    link: 'https://flamboyant-perlman-4a6dac.netlify.app/',
+    link: 'https://gokhankaracayprojects.netlify.app/reactprojects',
   },
   {
     logo: GatsbyLogo,
-    link: 'https://flamboyant-perlman-4a6dac.netlify.app/',
+    link: 'https://gokhankaracayprojects.netlify.app/gatsbyprojects',
   },
   {
     logo: PythonLogo,
-    link: 'https://flamboyant-perlman-4a6dac.netlify.app/',
+    link: 'https://gokhankaracayprojects.netlify.app/pythonprojects',
   },
   {
     logo: PersonalLogo,
-    link: 'https://flamboyant-perlman-4a6dac.netlify.app/',
+    link: 'https://gokhankaracayprojects.netlify.app/personalpageprojects',
   },
   {
     logo: LinkLogo,
-    link: 'https://flamboyant-perlman-4a6dac.netlify.app/',
+    link: 'https://gokhankaracayprojects.netlify.app/',
   },
   {
     logo: Link2Logo,
-    link: 'https://flamboyant-perlman-4a6dac.netlify.app/',
+    link: 'https://gokhankaracayprojects.netlify.app/',
   },
 ];
 
