@@ -21,7 +21,7 @@ const LOGOS = [
   },
   {
     logo: GatsbyLogo,
-    link: 'https://gokhankaracayprojects.netlify.app/gatsbyprojects',
+    link: 'https://gokhankaracayprojects.netlify.app/gatsbypro',
   },
   {
     logo: PythonLogo,
