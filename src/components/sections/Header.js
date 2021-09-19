@@ -5,7 +5,6 @@ import Img from 'gatsby-image';
 
 import { Container } from '@components/global';
 
-
 const Header = () => (
   <StaticQuery
     query={graphql`
@@ -26,7 +25,6 @@ const Header = () => (
       <HeaderWrapper>
         <Container>
           <Grid>
-            
             <Art>
               <Img fluid={data.art_build.childImageSharp.fluid} />
             </Art>
@@ -36,10 +34,14 @@ const Header = () => (
                 <br />
                 kişisel web sitesi
               </h1>
-              <div className="underline">    </div>
+              <div className="underline"> </div>
               <br />
-              <p> Web tasarım öğrenmeye çalışıyor, Javascript ve React meraklısı, bu işi profesyonel olarak yapma hevesinde. Gezmeyi, yemeyi, fotoğraf çekmeyi sever. İnsanı sever, hayvanı sever, doğayı sever. Fani, baba, eş.
-
+              <p>
+                {' '}
+                Mobil uygulamalar ve web uygulamaları geliştiriyor. Javascript,
+                React ve React Native ile meşgul, bu ve benzeri teknolojilere
+                meraklı. Gezmeyi, yemeyi, fotoğraf çekmeyi sever. İnsanı sever,
+                hayvanı sever, doğayı sever. Fani, baba, eş.
               </p>
             </Text>
           </Grid>

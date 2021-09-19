@@ -9,12 +9,15 @@ import ExternalLink from '@common/ExternalLink';
 import ReactLogo from '@images/logos/prlogoreact.png';
 import GatsbyLogo from '@images/logos/prlogogatsby.png';
 import PythonLogo from '@images/logos/prlogopython.png';
-import PersonalLogo from '@images/logos/prlogokisisel.png';
+import ReactNativeLogo from '@images/logos/prlogoreactnative.png';
 import LinkLogo from '@images/logos/prlogomeslek.png';
-import Link2Logo from '@images/logos/prlogodiger.png';
-
+// import Link2Logo from '@images/logos/prlogodiger.png';
 
 const LOGOS = [
+  {
+    logo: ReactNativeLogo,
+    link: 'https://gokhankaracayprojects.netlify.app/rnprojects',
+  },
   {
     logo: ReactLogo,
     link: 'https://gokhankaracayprojects.netlify.app/reactprojects',
@@ -28,17 +31,13 @@ const LOGOS = [
     link: 'https://gokhankaracayprojects.netlify.app/pythonprojects',
   },
   {
-    logo: PersonalLogo,
-    link: 'https://gokhankaracayprojects.netlify.app/personalpageprojects',
-  },
-  {
     logo: LinkLogo,
     link: 'https://gokhankaracayprojects.netlify.app/',
   },
-  {
-    logo: Link2Logo,
-    link: 'https://gokhankaracayprojects.netlify.app/',
-  },
+  // {
+  //   logo: Link2Logo,
+  //   link: 'https://gokhankaracayprojects.netlify.app/',
+  // },
 ];
 
 const UsedBy = () => (
@@ -61,7 +60,10 @@ const UsedBy = () => (
       <Section id="projects" accent>
         <StyledContainer>
           <div>
-            <ExternalLink href='https://flamboyant-perlman-4a6dac.netlify.app/' css={"text-decoration: none; color: black;"}>
+            <ExternalLink
+              href="https://gokhankaracayprojects.netlify.app/"
+              css={'text-decoration: none; color: black;'}
+            >
               <h1>Projelerim</h1>
             </ExternalLink>
             <LogoGrid>
