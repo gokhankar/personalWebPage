@@ -10,7 +10,7 @@ import ReactLogo from '@images/logos/prlogoreact.png';
 import GatsbyLogo from '@images/logos/prlogogatsby.png';
 import PythonLogo from '@images/logos/prlogopython.png';
 import ReactNativeLogo from '@images/logos/prlogoreactnative.png';
-import LinkLogo from '@images/logos/prlogomeslek.png';
+import LinkLogo from '@images/logos/prlogokisisel.png';
 // import Link2Logo from '@images/logos/prlogodiger.png';
 
 const LOGOS = [
