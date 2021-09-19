@@ -28,11 +28,11 @@ const Header = () => (
             <Art>
               <Img fluid={data.art_build.childImageSharp.fluid} />
             </Art>
-            <Text>
-              <h1>
+            <Text style={{ fontFamily: 'Special Elite' }}>
+              <h1 style={{ fontFamily: 'Special Elite' }}>
                 Gökhan Karaçay
-                <br />
-                kişisel web sitesi
+                {/* <br />
+                kişisel web sitesi */}
               </h1>
               <div className="underline"> </div>
               <br />
@@ -53,16 +53,19 @@ const Header = () => (
 
 const HeaderWrapper = styled.header`
   background-color: ${props => props.theme.color.primary};
-  padding-top: 96px;
+  /* padding-top: 96px; */
+  padding-top: 40px;
 
   @media (max-width: ${props => props.theme.screen.md}) {
-    padding-top: 128px;
+    /* padding-top: 128px; */
+    padding-top: 80px;
   }
 `;
 
 const Art = styled.figure`
   width: 100%;
   margin: 0;
+  margin-top: -40;
 
   > div {
     width: 120%;
@@ -82,7 +85,8 @@ const Grid = styled.div`
 
   @media (max-width: ${props => props.theme.screen.md}) {
     grid-template-columns: 1fr;
-    grid-gap: 80px;
+    /* grid-gap: 80px; */
+    grid-gap: 20px;
 
     > ${Art} {
       order: 2;
